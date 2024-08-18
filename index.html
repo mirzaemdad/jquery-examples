@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <h2 class="text-danger">Click the button to show the text</h2>
+    <button type="button" class="btn btn-dark" onclick="dataManipulate()" > Show result</button>
+    <h3 id="res"></h3>
+
+
+    <h2 class="text-danger">Click the button to show the text</h2>
+    <button type="button" class="btn btn-dark" onclick="showText()" > Show text</button>
+    <h3 id="s_text"></h3>
+    
+
+    <!-- JavaScript can change HTML content. -->
+    <h2 class="text-danger"> 3| Click the button to change HTML content</h2>
+   
+    <h3 id="change_html">JavaScript can change HTML content</h3>
+    <button type="button" class="btn btn-dark" onclick="changeHtml()" > Change content</button>
+
+    <hr>
+    <!-- JavaScript can change HTML attribute values. -->
+    
+    <h2 class="text-danger"> 4| Click the button to change attribute values</h2>
+   
+    <h3 id="change_html">JavaScript can change attribute values</h3>
+
+    <button type="button" class="btn btn-dark" onclick="lightOn()" > Turn on the light</button>
+
+    <img id="img" src="images/light-on.jpg" alt="light" style="width: 200px;">
+
+    <button type="button" class="btn btn-danger" onclick="lightOff()" > Turn off the light</button>
+
+    <hr>
+    <!-- JavaScript can change the style of an HTML element -->
+    <h2 class="text-danger"> 5| Click the button to change the style of an HTML element</h2>
+   
+    <h6 id="change_style">JavaScript can change the style of an HTML element</h6>
+    <button type="button" class="btn btn-dark" onclick="changeStyle()" > Change content</button>
+
+    <hr>
+
+    <!-- JavaScript can hide HTML elements -->
+    <h2 class="text-danger"> 6| Click the button to  hide HTML elements</h2>
+   
+    <h3 id="hide">JavaScript can hide HTML elements</h3>
+    <button type="button" class="btn btn-dark" onclick="hideElements()" > Hide element</button>
+
+    <hr>
+
+    <!-- JavaScript can show hidden HTML elements -->
+    <h2 class="text-danger"> 7| Click the button to  show hidden HTML elements</h2>
+   
+    <h3 id="show" style="display: none;">JavaScript can show hidden HTML elements</h3>
+    <button type="button" class="btn btn-dark" onclick="showElements()" > Show element</button>
+
+    <hr>
+
+    <!-- JavaScript Math -->
+    <h2 class=""> 8| Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both 
+      included)</h2>
+   
+    <h3 id="random_math"></h3> 
+  
+    <hr>
+
+    <!-- JavaScript Math -->
+    <h2 class=""> 9| Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included)</h2>
+   
+    <h3 id="show_result">JavaScript can show hidden HTML elements</h3>
+    <button type="button" class="btn btn-dark" onclick="intResRandom()" > Show element</button>
+
+    <hr>
+
+    <!-- JavaScript Dates -->
+    <h2 class=""> 10| new Date() without arguments, creates a date object with the current date and time</h2>
+   
+    <h3 id="show_date">Using new Date()</h3>
+
+
+    <hr>
+
+  </div>
+
+  
+    
+  
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
