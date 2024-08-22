@@ -13,91 +13,175 @@
 <body>
 
 
-  <div class="container">
-    <h2 class="text-danger">Click the button to show the text</h2>
-    <button type="button" class="btn btn-dark" onclick="dataManipulate()" > Show result</button>
-    <h3 id="res"></h3>
+    <div class="container">
+      <h2> jqurey</h2>
+
+    <p> 1| click button to show the alret messege</p>
+
+    <h3 id="num"></h3>
+    <button type="button" class="btn btn-dark btn1" > Click me</button>
+    <hr>
+
+    <p> 2| click the button to hide paragraph</p>
+
+    <h3 id="p">Lorem ipsum dolor sit amet.</h3>
+    <button type="button" class="btn btn-dark btn2"> Hide all h3</button>
+    <hr>
+
+    <p> 3| click the button to show paragraph</p>
+
+    <h3 id="showme" class="">Lorem ipsum dolor sit amet.</h3>
+    <button type="button" class="btn btn-dark btn3"> Show all h3</button>
+    <hr>
 
 
-    <h2 class="text-danger">Click the button to show the text</h2>
-    <button type="button" class="btn btn-dark" onclick="showText()" > Show text</button>
-    <h3 id="s_text"></h3>
+    <p> 4| click the button to hide button</p>
+
+    <h3 id="showme" class="">Lorem ipsum dolor sit amet.</h3>
+    <button type="button" class="btn btn-dark btn4"> Hide me</button>
+    <hr>
+
+
+    <p> 5| click the button to hide button</p>
+
+    <h3 id="hideshow" class="">Lorem ipsum dolor sit amet.</h3>
+    <button type="button" class="btn btn-dark btn5"> Hide</button>
+    <button type="button" class="btn btn-dark btn6"> Show</button>
+    <hr>
+
+    <p> 6| double click the button to hide paragraph</p>
+
+    <h3 id="dbl" class="">Lorem ipsum dolor sit amet.</h3>
+    <button type="button" class="btn btn-dark btn7"> double click to hide</button>
+    <button type="button" class="btn btn-dark btn8"> double click to show</button>
+    <hr>
+
+    <p> 7| mouse hover</p>
+
+    <h3 id="hover"> don't touch me!</h3>
+
+    <p> 8| click the button to hide and show paragraph</p>
+
+    <button type="button" class="btn btn-dark btn9"> click me</button>
+    <h3 id="tgl" class="">Lorem ipsum dolor sit amet.</h3>
     
-
-    <!-- JavaScript can change HTML content. -->
-    <h2 class="text-danger"> 3| Click the button to change HTML content</h2>
-   
-    <h3 id="change_html">JavaScript can change HTML content</h3>
-    <button type="button" class="btn btn-dark" onclick="changeHtml()" > Change content</button>
-
-    <hr>
-    <!-- JavaScript can change HTML attribute values. -->
-    
-    <h2 class="text-danger"> 4| Click the button to change attribute values</h2>
-   
-    <h3 id="change_html">JavaScript can change attribute values</h3>
-
-    <button type="button" class="btn btn-dark" onclick="lightOn()" > Turn on the light</button>
-
-    <img id="img" src="images/light-on.jpg" alt="light" style="width: 200px;">
-
-    <button type="button" class="btn btn-danger" onclick="lightOff()" > Turn off the light</button>
-
-    <hr>
-    <!-- JavaScript can change the style of an HTML element -->
-    <h2 class="text-danger"> 5| Click the button to change the style of an HTML element</h2>
-   
-    <h6 id="change_style">JavaScript can change the style of an HTML element</h6>
-    <button type="button" class="btn btn-dark" onclick="changeStyle()" > Change content</button>
-
     <hr>
 
-    <!-- JavaScript can hide HTML elements -->
-    <h2 class="text-danger"> 6| Click the button to  hide HTML elements</h2>
-   
-    <h3 id="hide">JavaScript can hide HTML elements</h3>
-    <button type="button" class="btn btn-dark" onclick="hideElements()" > Hide element</button>
+    <p> 9| Demonstrate fadeIn() with different parameters.</p>
 
-    <hr>
-
-    <!-- JavaScript can show hidden HTML elements -->
-    <h2 class="text-danger"> 7| Click the button to  show hidden HTML elements</h2>
-   
-    <h3 id="show" style="display: none;">JavaScript can show hidden HTML elements</h3>
-    <button type="button" class="btn btn-dark" onclick="showElements()" > Show element</button>
-
-    <hr>
-
-    <!-- JavaScript Math -->
-    <h2 class=""> 8| Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both 
-      included)</h2>
-   
-    <h3 id="random_math"></h3> 
+    <button type="button" class="btn btn-dark btn10"> Click to fade in boxes</button>
   
-    <hr>
 
-    <!-- JavaScript Math -->
-    <h2 class=""> 9| Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included)</h2>
+  <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+  <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+  <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+      <hr>
+
+    <p> 10| Demonstrate fadeOut() with different parameters.</p>
+
+    <button type="button" class="btn btn-dark btn11"> Click to fade out boxes</button>
+  
+
+  <div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+  <div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
+  <div id="div6" style="width:80px;height:80px;background-color:blue;"></div>
+
+  <hr>
+
+  <p> 11| Demonstrate fadeToggle() with different parameters.</p>
+
+    <button type="button" class="btn btn-dark btn11"> Click to fade in/out boxes</button>
+  
+
+  <div id="div7" style="width:80px;height:80px;background-color:red;"></div><br>
+  <div id="div8" style="width:80px;height:80px;background-color:green;"></div><br>
+  <div id="div9" style="width:80px;height:80px;background-color:blue;"></div>
+  <hr>
+
+  <p> 12| Demonstrate fadeTo() with different parameters..</p>
+
+    <button type="button" class="btn btn-dark btn12"> Click to fade boxes</button>
+  
+
+  <div id="div10" style="width:80px;height:80px;background-color:red;"></div><br>
+  <div id="div11" style="width:80px;height:80px;background-color:green;"></div><br>
+  <div id="div12" style="width:80px;height:80px;background-color:blue;"></div>
+
+  <hr>
+
+  <p> 13| slide down</p>
+  <button  id="flip" type="button" class="btn btn13"> Click to slide down panel</button>
+
    
-    <h3 id="show_result">JavaScript can show hidden HTML elements</h3>
-    <button type="button" class="btn btn-dark" onclick="intResRandom()" > Show element</button>
-
+    <div id="panel">Hello world!</div>
     <hr>
 
-    <!-- JavaScript Dates -->
-    <h2 class=""> 10| new Date() without arguments, creates a date object with the current date and time</h2>
+  <p> 14| slide up</p>
+  <button  id="flip" type="button" class="btn btn14"> Click to slide up panel</button>
+
    
-    <h3 id="show_date">Using new Date()</h3>
+    <div class="panel">Hello world!</div>
+    <hr>
 
+  <p> 15| slide up</p>
+  <button  id="flip" type="button" class="btn btn15"> Click to slide the panel down or up</button>
+
+   
+    <div class="panel2">Hello world!</div>
+    <hr>
+
+    <p> 16| Start animaition</p>
+
+    <button type="button" class="btn btn-dark btn16"> Start animaition</button>
+
+    <div class="ani"></div>
+    <hr>
+
+    <p class="m"> 17| Start animaition</p>
+
+    <button type="button" class="btn btn-dark btn17"> Start animaition</button>
+
+    <div class="ani2"></div>
 
     <hr>
 
-  </div>
+    <p class="m"> 18| Click the button multiple times to toggle the animation</p>
+
+    <button type="button" class="btn btn-dark btn18"> Start animaition</button>
+
+    <div class="ani3"></div>
+
+    <hr>
+
+    
+
+    <div class="rmv">
+      <p>19| Remov div</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-dark btn19"> Remove div</button>
+    </div>
+    <hr>
+
+    
+
+    <div class="empt rmv">
+      <p>20| Empty div</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-dark btn20"> Empty div</button>
+    </div>
+
+
+
+    </div>
 
   
     
   
     <!-- script links -->
+     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

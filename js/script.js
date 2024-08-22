@@ -1,67 +1,97 @@
+//  jqurey 
+
+$(document).ready(function(){
+    $('.btn1').on('click', function(){
+        alert('hello');
+    })
+
+    $('.btn2').on('click', function(){
+        $("h3").hide();
+    })
+
+    $('.btn3').on('click', function(){
+        $("h3").show();
+    })
+
+    $('.btn4').on('click', function(){
+        $(this).hide();
+    })
+
+    $('.btn5').on('click', function(){
+        $('#hideshow').hide();
+    })
+
+    $('.btn6').on('click', function(){
+        $('#hideshow').show();
+    })
+
+    $('.btn7').on('dblclick', function(){
+        $('#dbl').hide();
+    })
+    $('.btn8').on('dblclick', function(){
+        $('#dbl').show();
+    })
+
+    $('#hover').hover( function(){
+        alert('What happened?');
+    })
+
+    $('.btn9').on('click', function(){
+        $('#tgl').toggle();
+    })
+
+    $('.btn10').on('click', function(){
+        $('#div1').fadeIn();
+        $('#div2').fadeIn('slow');
+        $('#div3').fadeIn(2000);
+    })
+
+    $('.btn11').on('click', function(){
+        $('#div7').fadeToggle();
+        $('#div8').fadeToggle('slow');
+        $('#div9').fadeToggle(2000);
+    })
+
+    $('.btn12').on('click', function(){
+        $('#div10').fadeTo('slow', .15);
+        $('#div11').fadeTo('slow', .4);
+        $('#div12').fadeTo('slow', .7);
+    })
+
+    $("#flip").on("click", function(){
+        $("#panel").slideDown("slow");
+      });
+
+    $(".btn14").on("click", function(){
+        $(".panel").slideUp("slow");
+      });
+
+    $(".btn15").on("click", function(){
+        $(".panel2").slideToggle("slow");
+      });
+
+      $('.btn16').on('click', function(){
+         $(".ani").animate({left:'550px'});
+      })
+
+      $('.btn17').on('click', function(){
+         $(".ani2").animate({left:'550px',
+            opacity: '.5',
+            width: '150px',
+            height: '150px'
+         });
+      })
+
+      $('.btn18').on('click', function(){
+        $('.ani3').animate({height: 'toggle'});
+      });
 
 
-function showText(){
-    document.getElementById('s_text').innerHTML = "Hello SSB";
-}
-function hideText(){
-    document.getElementById('s_text').innerHTML = "";
-}
+      $('.btn19').on('click', function(){
+        $('.rmv').remove();
+      })
 
-
-
-let number_1, number_2;
-
-number_1 = 4;
-number_2 = 5;
-
-number_1 += number_2;
-
-function dataManipulate(){
-    document.getElementById('res').innerHTML=
-    number_1;
-}
-
-//  JavaScript can change HTML attribute values 
-function changeHtml(){
-    document.getElementById('change_html').innerHTML= "How strange! I changed HTML content.";
-}
-function lightOn(){
-    document.getElementById('img').src = 'images/light-on.jpg';
-}
-function lightOff(){
-    document.getElementById('img').src = 'images/light-off.jpg';
-}
-
-// change the style of an HTML element
-
-function changeStyle(){
-    document.getElementById('change_style').style.fontSize = '30px';
-}
-
-// hide HTML elements
-
-function hideElements(){
-    document.getElementById('hide').style.display = 'none';
-}
-// show hidden HTML elements
-
-function showElements(){
-    document.getElementById('show').style.display = 'block';
-}
-
-// JavaScript Math
-
-document.getElementById("random_math").innerHTML =
-Math.floor(Math.random() * 10);
-
-
-function intRandom(min, max){
-    return Math.floor(Math.random() * (max - min + 1)) + min ;
-}
-
-function intResRandom(){
-    document.getElementById("show_result").innerHTML = intRandom(10, 20);
-}
-
-const d = new Date();
-document.getElementById("show_date").innerHTML = d;
+      $('.btn20').on('click', function(){
+        $('.empt').empty();
+      })
+})
